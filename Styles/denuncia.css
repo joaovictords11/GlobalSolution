@@ -1,0 +1,120 @@
+.denuncia{
+    background-color: var(--azul-fundo);
+    padding: 5rem 0;
+}
+
+.denuncia__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--branco);
+    margin: 0 14rem;
+    border-radius: 10px;
+    padding: 3rem 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.denuncia__card__conteudo{
+    display: flex;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.campo-formulario{
+    border: 1px solid var(--cinza);
+    border-radius: 4px;
+    font-size: 16px;
+    padding: .5rem 0;
+    padding-left: .5rem;
+}
+
+.campo-formulario__mensagem{
+    padding-bottom: 8rem;
+}
+
+.btn-enviar{
+    color: var(--branco);
+    background-color: var(--azul-principal);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: .5rem 0;
+    width: 27vw;
+}
+
+.btn-enviar:hover{
+    background-color: var(--azul-forte);
+}
+
+.denuncia__titulo{
+    color: var(--azul-principal);
+    font-size: 24px;
+    margin-bottom: 4rem;
+    border-bottom: 2px solid var(--azul-principal);
+}
+
+.denuncia__card__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.denuncia__card__lista__item{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: .7rem;
+}
+
+@media screen and (max-width: 1298px) {
+    .btn-enviar{
+        width: 23vw;
+    }
+
+    .denuncia__img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .denuncia__card__conteudo{
+        flex-direction: column;
+    }
+
+    .denuncia__card__lista{
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    .btn-enviar{
+        width: 100%;
+    }
+
+    .denuncia__card{
+        margin: 0 12rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .denuncia__card{
+        margin: 0 9rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .denuncia__card{
+        margin: 0 6rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .denuncia__card{
+        margin: 0 4rem;
+    }
+}
