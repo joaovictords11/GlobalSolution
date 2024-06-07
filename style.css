@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('./Styles/reset.css');
+@import url('./Styles/cabecalho.css');
+@import url('./Styles/apresentacao.css');
+@import url('./Styles/estatisticas.css');
+@import url('./Styles/ajuda.css');
+@import url('./Styles/mapa.css');
+@import url('./Styles/denuncia.css');
+@import url('./Styles/rodape.css');
+@import url('./Styles/sobre-apresentacao.css');
+@import url('./Styles/sobre-resumo.css');
+@import url('./Styles/integrantes.css');
+@import url('./Styles/suporte-apresentacao.css');
+@import url('./Styles/suporte-contato.css');
+
+:root{
+    --branco: #ffffff;
+    --azul-forte: #083344;
+    --azul-fundo: #CFFAFE;
+    --azul-principal: #164e63;
+    --azul-cards: #0E7490;
+    --cinza: #878787;
+    --fonte-principal: "Inter", sans-serif;
+}
+
+*{
+    font-family: "Inter", sans-serif;
+}

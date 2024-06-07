@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="cabecalho">
+            <nav class="cabecalho__nav">
+                <ul class="cabecalho__lista">
+                    <li class="cabecalho__lista__item">
+                        <a href="./index.html" class="cabecalho__link">
+                            <p class="texto-home">Home</p>
+                            <img class="icone-home" src="./Assets/icone-home.png" alt="icone-home">
+                        </a>
+                    </li>
+                    <li class="cabecalho__lista__item">
+                        <a href="./sobre.html" class="cabecalho__link">Sobre</a>
+                    </li>
+                    <li class="cabecalho__lista__item">
+                        <a href="index.html#denuncia" class="cabecalho__link cabecalho__denuncia">Denúncia</a>
+                    </li>
+                    <li class="cabecalho__lista__item">
+                        <a href="#" class="cabecalho__link cabecalho__suporte">Suporte</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="cabecalho__botao" aria-label="Botão de login">
+                <p class="login-texto">Login</p>
+                <img class="icone-login" src="./Assets/icone-login.png" alt="icone-login">
+            </button>
+        </div>
+        <section class="suporte-apresentacao">
+            <div class="suporte-apresentacao__vertical">
+                <h1 class="suporte__titulo">Central de Ajuda</h1>
+                <input type="search" class="suporte__pesquisa" placeholder="Procure por um tópico de ajuda">
+            </div>
+            <div class="suporte-apresentacao__links">
+                <a href="#" class="suporte__link">Denúncias</a>
+                <a href="#" class="suporte__link">Cadastro</a>
+                <a href="#" class="suporte__link">Privacidade</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="suporte-contato">
+            <div class="suporte-contato__principal">
+                <h2 class="suporte-contato__titulo">Entre em contato</h2>
+                <h4 class="suporte-contato__subtitulo">Nosso time está disponível de segunda a sábado das 08h às 20h, exceto feriados.</h4> 
+            </div>
+            <div class="suporte-contato__informacoes">
+                <div class="suporte-contato__telefone">
+                    <img class="suporte-contato-img" src="./Assets/icone-telefone.svg" alt="icone de telefone">
+                    <p class="suporte-contato__dados telefone-dados">(11) 2579-9306</p>
+                    <p class="suporte-contato__telefone__texto">Faça sua solicitação com o nosso time de atendimento.</p>
+                </div>
+                <hr class="suporte-contao__divisao">
+                <div class="suporte-contato__email">
+                    <img class="suporte-contato-img" src="./Assets/icone-email.svg" alt="icone de email">
+                    <p class="suporte-contato__dados email-dados">oztech@gmail.com</p>
+                    <p class="suporte-contato__email__texto">Acompanhe com o nosso time de atendimento.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <ul class="rodape__esquerdo__lista">
+            <li class="rodape__esquerdo__lista__item oztech-rodape">OzTech</li>
+            <li class="rodape__esquerdo__lista__item">Copyright 2024</li>
+            <li class="rodape__esquerdo__lista__item cnpj-rodape">CNPJ 02472870209</li>
+            <li class="rodape__esquerdo__lista__item localizacao-rodape">São Paulo, Brasil</li>
+        </ul>
+        <ul class="rodape__direito__lista">
+            <li class="rodape__direito__lista__item">
+                <a href="#" class="rodape__link">Suporte</a>
+            </li>
+            <li class="rodape__direito__lista__item">
+                <a href="#" class="rodape__link privacidade-rodape">Política de privacidade</a>               
+            </li>
+        </ul>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+.integrantes{
+    padding: 6rem 0;
+    background-color: var(--azul-fundo);
+}
+
+.cards__integrantes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card__integrante{
+    background-color: var(--azul-cards);
+    width: 23rem;
+    border-radius: 16px;
+    box-shadow: 1px 2px 2px var(--cinza);
+}
+
+.card__integrante__conteudo{
+    display: flex;
+    justify-content: center;
+}
+
+.card__integrante__img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 20.8rem;
+}
+
+.lista__integrante__item{
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+}
+
+.card__integrante__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 3rem;
+}
+
+.cards__github{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3.5rem;
+}
+
+.card__git{
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 500;
+    background-color: var(--azul-cards);
+    width: 23rem;
+    text-align: center;
+    border-radius: 16px;
+    padding: 2rem 0;
+    box-shadow: 1px 2px 2px var(--cinza);
+}
+
+.card__git:hover{
+    background-color: var(--azul-principal);
+}
+
+.link-github{
+    display: none;
+}
+
+@media screen and (max-width: 1199px){
+    .cards__github{
+        display: none;
+    }
+
+    .cards__integrantes{
+        flex-direction: column;
+        gap: 8rem;
+        align-items: center;
+    }
+
+    .card__integrante{
+        display: flex;
+        align-items: center;
+        background-color: var(--azul-cards);
+        width: 57.8rem;
+        height: 16rem;
+        border-radius: 16px;
+        box-shadow: 1px 2px 2px var(--cinza);
+    }
+
+    .card__integrante__img{
+        width: 20.6rem;
+        height: 100%;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        border-top-right-radius: 0;
+    }
+
+    .lista__integrante__item{
+        font-size: 32px;
+        display: flex;
+        justify-content: start;
+        margin-left: 1rem;
+    }
+
+    .card__integrante__lista{      
+        justify-content: center;
+    }
+
+    .link-github{
+        display: flex;
+        height: 60%;
+    }
+
+    .github-joao{
+        margin-left: 4.5rem;
+    }
+
+    .github-gustavo{
+        margin-left: 2.8rem;
+    }
+
+    .github-diogo{
+        margin-left: 5.4rem;
+    }
+
+}
+
+@media screen and (max-width: 991px){
+    .card__integrante{
+        width: 46.2rem;
+        height: 15.6rem;
+    }
+
+    .card__integrante__img{
+        width: 14rem;
+    }
+
+    .lista__integrante__item{
+        font-size: 34px;
+        margin-left: 1rem;
+    }
+
+    .github-joao{
+        margin-left: 1.8rem;
+    }
+
+    .github-gustavo{
+        margin-left: 0.1rem;
+    }
+
+    .github-diogo{
+        margin-left: 2.5rem;
+    }
+
+    .repositorio__link{
+        margin: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .link-github{
+        display: none;
+    }
+
+    .cards__github{
+        display: flex;
+    }
+
+    .cards__integrantes{
+        flex-direction: column;
+    }
+
+    .card__integrante{
+        flex-direction: column;
+        width: 26.9rem;
+        height: 33.2rem;
+    }
+
+    .card__integrante__lista{
+        padding: 3.7rem;
+    }
+
+    .card__integrante__img{
+        width: 100%;
+        height: 19.2rem;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 0;
+    }
+
+    .lista__integrante__item{
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .card__git{
+        width: 26.9rem;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 590px){
+
+    .cards__integrantes{
+        gap: 6rem;
+    }
+
+    .card__integrante{
+        width: 14.3rem;
+        height: 23rem;
+    }
+
+    .card__git{
+        width: 14.3rem;
+        font-size: 26px;
+        padding: 1.3rem 0;
+    }
+
+    .lista__integrante__item{
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .card__integrante__img{
+        height: 13.7rem;
+    }
+
+    .card__integrante__lista{
+        padding: 1.8rem 0;
+    }
+
+}

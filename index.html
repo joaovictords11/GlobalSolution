@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OzTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="cabecalho">
+            <nav class="cabecalho__nav">
+                <ul class="cabecalho__lista">
+                    <li class="cabecalho__lista__item">
+                        <a href="#" class="cabecalho__link">
+                            <p class="texto-home">Home</p>
+                            <img class="icone-home" src="./Assets/icone-home.png" alt="icone-home">
+                        </a>
+                    </li>
+                    <li class="cabecalho__lista__item">
+                        <a href="./sobre.html" class="cabecalho__link">Sobre</a>
+                    </li>
+                    <li class="cabecalho__lista__item">
+                        <a href="#denuncia" class="cabecalho__link cabecalho__denuncia">Denúncia</a>
+                    </li>
+                    <li class="cabecalho__lista__item">
+                        <a href="./suporte.html" class="cabecalho__link cabecalho__suporte">Suporte</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="cabecalho__botao" aria-label="Botão de login">
+                <p class="login-texto">Login</p>
+                <img class="icone-login" src="./Assets/icone-login.png" alt="icone-login">
+            </button>
+        </div>
+        <section class="apresentacao">
+            <div class="apresentacao__conteudo">
+                <h1 class="apresentacao__titulo">Vamos salvar a nossa vida marinha.</h1>
+                <h4 class="apresentacao__subtitulo">Estima-se que em torno de 8 milhões de toneladas de lixo marinho são descartadas nos oceanos e mares a cada ano.</h4>
+                <button class="apresentacao__botao" aria-label="Botão para conhecer a empresa">
+                    Venha conhecer
+                    <img src="./Assets/icone-seta.svg" alt="seta para a direita">
+                </button>
+            </div>
+            <img class="apresentacao__img" src="./Assets/img-peixe.jpg" alt="imagem peixe no oceano">
+        </section>
+    </header>
+    <main>
+        <section class="estatisticas">
+            <div class="estatisticas__card">
+                <h2 class="estatisticas__numero">2M</h2>
+                <p class="estatisticas__texto">Mortes anuais por água contaminada.</p>
+            </div>
+            <div class="estatisticas__card">
+                <h2 class="estatisticas__numero">71%</h2>
+                <p class="estatisticas__texto">Do nosso planeta é composto de água.</p>
+            </div>
+            <div class="estatisticas__card">
+                <h2 class="estatisticas__numero">1M</h2>
+                <p class="estatisticas__texto">Tartarugas mortas por ano.</p>
+            </div>
+        </section>
+        <section class="ajuda">
+            <h2 class="ajuda__titulo">Contamos com a sua ajuda</h2>
+            <div class="ajuda__cards">
+                <div class="ajuda__card">
+                    <h3 class="ajuda__subtitulo">Denunciando</h3>
+                    <p class="ajuda__texto">Ajude a proteger nossos oceanos e rios! Denuncie qualquer situação de poluição que você testemunhar e faça parte da solução para um ambiente mais limpo.</p>
+                </div>
+                <div class="ajuda__card">
+                    <h3 class="ajuda__subtitulo">Conscientizando</h3>
+                    <p class="ajuda__texto">Conscientize seus amigos e familiares sobre a importância de não poluir nossos oceanos e rios. Juntos, podemos proteger a vida marinha e nosso planeta!</p>
+                </div>
+                <div class="ajuda__card">
+                    <h3 class="ajuda__subtitulo">Praticando</h3>
+                    <p class="ajuda__texto">Participe da limpeza de nossas águas poluídas sempre que possível. Sua ajuda é essencial para preservar a saúde dos oceanos e rios para futuras gerações!</p>
+                </div>
+            </div>
+        </section>
+        <section class="mapa">
+            <div class="mapa__card">
+                <h2 class="mapa__titulo">Oceanos mais afetados</h2>
+                <h4 class="mapa__subtitulo">Todos os oceanos do nosso planeta foram já foram afetados pelas ações humanas, porém alguns em destaque sofreram mais.</h4>
+                <img class="mapa__img" src="./Assets/img-oceanos.jpg" alt="mapa com os oceanos mais afetados pela poluição">
+                <p class="texto-mapa">Os oceanos do mundo estão enfrentando uma crise sem precedentes devido à poluição. O Pacífico Norte é um dos mais afetados, com a famosa Grande Mancha de Lixo do Pacífico, contendo milhões de toneladas de resíduos plásticos. O Atlântico Norte também sofre com grandes concentrações de microplásticos e resíduos industriais. O Mar Mediterrâneo, cercado por muitos países, é outro ponto crítico, recebendo grandes quantidades de poluentes de esgotos e atividades costeiras. A preservação desses ecossistemas marinhos é vital para a saúde do nosso planeta.</p>
+                <div class="mapa__botoes">
+                    <button class="btn-mapa btn-ativo" aria-label="botão para vizualizar o mapa">Mapa</button>
+                    <button class="btn-texto" aria-label="botão para vizualizar o texto">Texto</button>
+                </div>
+            </div>
+        </section>
+        <section class="denuncia">
+            <div class="denuncia__card" id="denuncia">
+                <h2 class="denuncia__titulo">Denuncie</h2>
+                <div class="denuncia__card__conteudo">
+                    <form class="formulario">
+                        <input class="campo-formulario" id="nome-form" minlength="3" maxlength="120" type="text" pattern="[A-Za-zÀ-ú. ]+" placeholder="Nome" aria-label="formulario para digitar  nome">
+                        <input class="campo-formulario" id="email-form" type="email" placeholder="Email" aria-label="formulario para digitar o email">
+                        <input class="campo-formulario campo-formulario__mensagem" id="mensagem-form" type="text" placeholder="Deixe a sua mensagem" aria-label="formulario para deixar sua mensagem de denuncia">
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </form>
+                    <ul class="denuncia__card__lista">
+                        <li class="denuncia__card__lista__item">
+                            <img src="./Assets/icone-localizacao.svg" alt="icone-localizacao">
+                            Av. Paulista, 1106 - 7º andar - Bela Vista, São Paulo - SP
+                        </li>
+                        <li class="denuncia__card__lista__item">
+                            <img src="./Assets/icone-telefone.svg" alt="icone-telefone">
+                            (11) 2579-9306
+                        </li>
+                        <li class="denuncia__card__lista__item">
+                            <img src="./Assets/icone-email.svg" alt="icone-email">
+                            oztech@gmail.com
+                        </li>
+                        <li class="denuncia__card__lista__item">
+                            <img class="denuncia__img" src="./Assets/img-fiap.png" alt="mapa localização Fiap Av.Paulista">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <ul class="rodape__esquerdo__lista">
+            <li class="rodape__esquerdo__lista__item oztech-rodape">OzTech</li>
+            <li class="rodape__esquerdo__lista__item">Copyright 2024</li>
+            <li class="rodape__esquerdo__lista__item cnpj-rodape">CNPJ 02472870209</li>
+            <li class="rodape__esquerdo__lista__item localizacao-rodape">São Paulo, Brasil</li>
+        </ul>
+        <ul class="rodape__direito__lista">
+            <li class="rodape__direito__lista__item">
+                <a href="./suporte.html" class="rodape__link">Suporte</a>
+            </li>
+            <li class="rodape__direito__lista__item">
+                <a href="#" class="rodape__link privacidade-rodape">Política de privacidade</a>               
+            </li>
+        </ul>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
